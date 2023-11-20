@@ -1,0 +1,49 @@
+==59463== Memcheck, a memory error detector
+==59463== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==59463== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==59463== Command: Resultados/LeandroFrigini/completo/prog Resultados/LeandroFrigini/completo/Casos/4
+==59463== Parent PID: 59462
+==59463== 
+==59463== Use of uninitialised value of size 8
+==59463==    at 0x48D3149: __vfscanf_internal (vfscanf-internal.c:1896)
+==59463==    by 0x48CE141: __isoc99_scanf (isoc99_scanf.c:30)
+==59463==    by 0x10935F: LeDadosParaVetor (in /home/frigini/Downloads/Prog/Exercicios/exercicios-gerais/05_ponteiros/pont_03/Resultados/LeandroFrigini/completo/prog)
+==59463==    by 0x1092B6: main (in /home/frigini/Downloads/Prog/Exercicios/exercicios-gerais/05_ponteiros/pont_03/Resultados/LeandroFrigini/completo/prog)
+==59463==  Uninitialised value was created by a stack allocation
+==59463==    at 0x1091F5: main (in /home/frigini/Downloads/Prog/Exercicios/exercicios-gerais/05_ponteiros/pont_03/Resultados/LeandroFrigini/completo/prog)
+==59463== 
+==59463== Invalid write of size 4
+==59463==    at 0x48D3149: __vfscanf_internal (vfscanf-internal.c:1896)
+==59463==    by 0x48CE141: __isoc99_scanf (isoc99_scanf.c:30)
+==59463==    by 0x10935F: LeDadosParaVetor (in /home/frigini/Downloads/Prog/Exercicios/exercicios-gerais/05_ponteiros/pont_03/Resultados/LeandroFrigini/completo/prog)
+==59463==    by 0x1092B6: main (in /home/frigini/Downloads/Prog/Exercicios/exercicios-gerais/05_ponteiros/pont_03/Resultados/LeandroFrigini/completo/prog)
+==59463==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==59463== 
+==59463== 
+==59463== Process terminating with default action of signal 11 (SIGSEGV)
+==59463==  Access not within mapped region at address 0x0
+==59463==    at 0x48D3149: __vfscanf_internal (vfscanf-internal.c:1896)
+==59463==    by 0x48CE141: __isoc99_scanf (isoc99_scanf.c:30)
+==59463==    by 0x10935F: LeDadosParaVetor (in /home/frigini/Downloads/Prog/Exercicios/exercicios-gerais/05_ponteiros/pont_03/Resultados/LeandroFrigini/completo/prog)
+==59463==    by 0x1092B6: main (in /home/frigini/Downloads/Prog/Exercicios/exercicios-gerais/05_ponteiros/pont_03/Resultados/LeandroFrigini/completo/prog)
+==59463==  If you believe this happened as a result of a stack
+==59463==  overflow in your program's main thread (unlikely but
+==59463==  possible), you can try to increase the size of the
+==59463==  main thread stack using the --main-stacksize= flag.
+==59463==  The main thread stack size used in this run was 8388608.
+==59463== 
+==59463== HEAP SUMMARY:
+==59463==     in use at exit: 4,096 bytes in 1 blocks
+==59463==   total heap usage: 1 allocs, 0 frees, 4,096 bytes allocated
+==59463== 
+==59463== LEAK SUMMARY:
+==59463==    definitely lost: 0 bytes in 0 blocks
+==59463==    indirectly lost: 0 bytes in 0 blocks
+==59463==      possibly lost: 0 bytes in 0 blocks
+==59463==    still reachable: 4,096 bytes in 1 blocks
+==59463==         suppressed: 0 bytes in 0 blocks
+==59463== Reachable blocks (those to which a pointer was found) are not shown.
+==59463== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==59463== 
+==59463== For lists of detected and suppressed errors, rerun with: -s
+==59463== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

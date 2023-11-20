@@ -1,0 +1,49 @@
+==58432== Memcheck, a memory error detector
+==58432== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==58432== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==58432== Command: Resultados/LeandroFrigini/vetor/prog Resultados/LeandroFrigini/vetor/Casos/4
+==58432== Parent PID: 58431
+==58432== 
+==58432== Use of uninitialised value of size 8
+==58432==    at 0x48D3149: __vfscanf_internal (vfscanf-internal.c:1896)
+==58432==    by 0x48CCC6E: scanf (scanf.c:38)
+==58432==    by 0x109378: LeDadosParaVetor (in /home/frigini/Downloads/Prog/Exercicios/exercicios-gerais/05_ponteiros/pont_03/Resultados/LeandroFrigini/vetor/prog)
+==58432==    by 0x1092CF: main (in /home/frigini/Downloads/Prog/Exercicios/exercicios-gerais/05_ponteiros/pont_03/Resultados/LeandroFrigini/vetor/prog)
+==58432==  Uninitialised value was created by a stack allocation
+==58432==    at 0x10920E: main (in /home/frigini/Downloads/Prog/Exercicios/exercicios-gerais/05_ponteiros/pont_03/Resultados/LeandroFrigini/vetor/prog)
+==58432== 
+==58432== Invalid write of size 4
+==58432==    at 0x48D3149: __vfscanf_internal (vfscanf-internal.c:1896)
+==58432==    by 0x48CCC6E: scanf (scanf.c:38)
+==58432==    by 0x109378: LeDadosParaVetor (in /home/frigini/Downloads/Prog/Exercicios/exercicios-gerais/05_ponteiros/pont_03/Resultados/LeandroFrigini/vetor/prog)
+==58432==    by 0x1092CF: main (in /home/frigini/Downloads/Prog/Exercicios/exercicios-gerais/05_ponteiros/pont_03/Resultados/LeandroFrigini/vetor/prog)
+==58432==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==58432== 
+==58432== 
+==58432== Process terminating with default action of signal 11 (SIGSEGV)
+==58432==  Access not within mapped region at address 0x0
+==58432==    at 0x48D3149: __vfscanf_internal (vfscanf-internal.c:1896)
+==58432==    by 0x48CCC6E: scanf (scanf.c:38)
+==58432==    by 0x109378: LeDadosParaVetor (in /home/frigini/Downloads/Prog/Exercicios/exercicios-gerais/05_ponteiros/pont_03/Resultados/LeandroFrigini/vetor/prog)
+==58432==    by 0x1092CF: main (in /home/frigini/Downloads/Prog/Exercicios/exercicios-gerais/05_ponteiros/pont_03/Resultados/LeandroFrigini/vetor/prog)
+==58432==  If you believe this happened as a result of a stack
+==58432==  overflow in your program's main thread (unlikely but
+==58432==  possible), you can try to increase the size of the
+==58432==  main thread stack using the --main-stacksize= flag.
+==58432==  The main thread stack size used in this run was 8388608.
+==58432== 
+==58432== HEAP SUMMARY:
+==58432==     in use at exit: 4,096 bytes in 1 blocks
+==58432==   total heap usage: 1 allocs, 0 frees, 4,096 bytes allocated
+==58432== 
+==58432== LEAK SUMMARY:
+==58432==    definitely lost: 0 bytes in 0 blocks
+==58432==    indirectly lost: 0 bytes in 0 blocks
+==58432==      possibly lost: 0 bytes in 0 blocks
+==58432==    still reachable: 4,096 bytes in 1 blocks
+==58432==         suppressed: 0 bytes in 0 blocks
+==58432== Reachable blocks (those to which a pointer was found) are not shown.
+==58432== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==58432== 
+==58432== For lists of detected and suppressed errors, rerun with: -s
+==58432== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

@@ -1,0 +1,31 @@
+Resultados/LeandroFrigini/vetor/vetor.c: In function ‘LeDadosParaVetor’:
+Resultados/LeandroFrigini/vetor/vetor.c:6:9: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+    6 |         scanf("%d", vet[i]);
+      |         ^~~~~
+Resultados/LeandroFrigini/vetor/vetor.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+    1 | #include "vetor.h"
+  +++ |+#include <stdio.h>
+    2 | 
+Resultados/LeandroFrigini/vetor/vetor.c:6:9: warning: incompatible implicit declaration of built-in function ‘scanf’ [-Wbuiltin-declaration-mismatch]
+    6 |         scanf("%d", vet[i]);
+      |         ^~~~~
+Resultados/LeandroFrigini/vetor/vetor.c:6:9: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+Resultados/LeandroFrigini/vetor/vetor.c:6:17: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int’ [-Wformat=]
+    6 |         scanf("%d", vet[i]);
+      |                ~^   ~~~~~~
+      |                 |      |
+      |                 int *  int
+Resultados/LeandroFrigini/vetor/vetor.c: In function ‘ImprimeDadosDoVetor’:
+Resultados/LeandroFrigini/vetor/vetor.c:14:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   14 |         printf("%d ", n[i]);
+      |         ^~~~~~
+Resultados/LeandroFrigini/vetor/vetor.c:14:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+Resultados/LeandroFrigini/vetor/vetor.c:14:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+Resultados/LeandroFrigini/vetor/vetor.c:14:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+Resultados/LeandroFrigini/vetor/vetor.c: In function ‘TrocaSeAcharMenor’:
+Resultados/LeandroFrigini/vetor/vetor.c:23:24: warning: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   23 |             paraTrocar = i;
+      |                        ^
+Resultados/LeandroFrigini/vetor/vetor.c:29:12: warning: ‘indice’ may be used uninitialized [-Wmaybe-uninitialized]
+   29 |         vet[indice] = vet[troca];
+      |            ^
